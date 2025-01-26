@@ -14,9 +14,13 @@ return {
             { "3rd/image.nvim", opts = {} },
         }
     },
+    { "kevinhwang91/nvim-hlslens" },
     { 'marko-cerovac/material.nvim', opts = {} },
     { "nvim-lualine/lualine.nvim", opts = {} },
-    {'romgrk/barbar.nvim',
+    { "kevinhwang91/nvim-bqf", opts = {} },
+    { "https://codeberg.org/esensar/nvim-dev-container", opts = {} },
+    {
+        'romgrk/barbar.nvim',
         dependencies = {
             'lewis6991/gitsigns.nvim',
             'nvim-tree/nvim-web-devicons',
@@ -25,4 +29,15 @@ return {
         opts = {
         },
     },
+    {
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
+        opts = {},
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
+        "petertriho/nvim-scrollbar",
+        dependencies = { "nvim-hlslens", "gitsigns.nvim" },
+        opts = {}
+    }
 }
