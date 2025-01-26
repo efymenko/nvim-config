@@ -92,4 +92,5 @@ opt.undoreload = 10000
 opt.foldmethod = "marker"
 opt.foldlevel = 99
 
+g.coq_settings = { auto_start = true }
 
