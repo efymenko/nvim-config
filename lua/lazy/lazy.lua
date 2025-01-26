@@ -22,7 +22,7 @@ require("lazy").setup({
         { import = "plugins" },
     },
     checker = { enabled = false },
-    colorscheme = {},
+    colorscheme = { "material-darker" },
     change_detection = {
         enabled = false,
     },

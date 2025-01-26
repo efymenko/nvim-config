@@ -1,15 +1,5 @@
 return {
     {
-    	"tversteeg/registers.nvim",
-        cmd = "Registers",
-        config = true,
-        keys = {
-            { "\"",    mode = { "n", "v" } },
-            { "<C-R>", mode = "i" }
-        },
-        name = "registers",
-    },
-    {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.8',
         dependencies = { 'nvim-lua/plenary.nvim' }
@@ -24,5 +14,15 @@ return {
             { "3rd/image.nvim", opts = {} },
         }
     },
-    { 'marko-cerovac/material.nvim', opts = {} }
+    { 'marko-cerovac/material.nvim', opts = {} },
+    { "nvim-lualine/lualine.nvim", opts = {} },
+    {'romgrk/barbar.nvim',
+        dependencies = {
+            'lewis6991/gitsigns.nvim',
+            'nvim-tree/nvim-web-devicons',
+        },
+        init = function() vim.g.barbar_auto_setup = false end,
+        opts = {
+        },
+    },
 }
