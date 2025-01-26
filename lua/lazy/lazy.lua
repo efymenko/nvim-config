@@ -22,6 +22,7 @@ require("lazy").setup({
         { import = "plugins" },
     },
     checker = { enabled = false },
+    colorscheme = {},
     change_detection = {
         enabled = false,
     },
