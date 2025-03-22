@@ -18,7 +18,6 @@ return {
     { 'marko-cerovac/material.nvim', opts = {} },
     { "nvim-lualine/lualine.nvim", opts = {} },
     { "kevinhwang91/nvim-bqf", opts = {} },
-    { "https://codeberg.org/esensar/nvim-dev-container", opts = {} },
     {
         'romgrk/barbar.nvim',
         dependencies = {
