@@ -8,7 +8,8 @@ require("mason-lspconfig").setup {
 
 require("mason-lspconfig").setup_handlers {
     function (server_name)
-        require("lspconfig")[server_name].setup({})
+        local coq = require "coq"
+        require("lspconfig")[server_name].setup(coq.lsp_ensure_capabilities({}))
     end,
     ["lua_ls"] = function ()
         local lspconfig = require("lspconfig")
@@ -19,6 +20,5 @@ require("mason-lspconfig").setup_handlers {
 }
 
 require("keymaps")
-
 vim.cmd([[colorscheme material-darker]])
 
