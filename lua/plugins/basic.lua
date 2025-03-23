@@ -19,24 +19,9 @@ return {
     { "nvim-lualine/lualine.nvim", opts = {} },
     { "kevinhwang91/nvim-bqf", opts = {} },
     {
-        'romgrk/barbar.nvim',
-        dependencies = {
-            'lewis6991/gitsigns.nvim',
-            'nvim-tree/nvim-web-devicons',
-        },
-        init = function() vim.g.barbar_auto_setup = false end,
-        opts = {
-        },
-    },
-    {
         'nvimdev/dashboard-nvim',
         event = 'VimEnter',
         opts = {},
         dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
-    {
-        "petertriho/nvim-scrollbar",
-        dependencies = { "nvim-hlslens", "gitsigns.nvim" },
-        opts = {}
-    }
 }
