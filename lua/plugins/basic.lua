@@ -13,6 +13,9 @@ return {
             "MunifTanjim/nui.nvim",
         }
     },
+    { "nvim-lua/plenary.nvim" },
+    { "nvim-tree/nvim-web-devicons" },
+    { "MunifTanjim/nui.nvim" },
     { "kevinhwang91/nvim-hlslens" },
     { "nvim-lualine/lualine.nvim", opts = {} },
     { "kevinhwang91/nvim-bqf", opts = {} },
