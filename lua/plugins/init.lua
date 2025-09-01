@@ -20,19 +20,11 @@ vim.pack.add({
     'https://github.com/MagicDuck/grug-far.nvim',
     'https://github.com/cbochs/grapple.nvim',
     'https://github.com/nvim-lualine/lualine.nvim',
-    'https://github.com/hrsh7th/nvim-cmp',
-    'https://github.com/hrsh7th/cmp-nvim-lsp',
-    'https://github.com/hrsh7th/cmp-buffer',
-    'https://github.com/hrsh7th/cmp-path',
-    'https://github.com/hrsh7th/cmp-cmdline',
-    'https://github.com/L3MON4D3/LuaSnip',
-    'https://github.com/saadparwaiz1/cmp_luasnip',
 });
 
 require('plugins/cyberdream')
 require('plugins/lsp')
 require('lsp-file-operations').setup()
-require('plugins/cmp')
 
 require('plugins/treesitter')
 require('grug-far').setup({})
