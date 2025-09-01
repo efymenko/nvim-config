@@ -25,10 +25,10 @@ opt.softtabstop = indent -- when hitting <BS>, pretend like a tab is removed, ev
 opt.tabstop = indent     -- insert 2 spaces for a tab
 opt.shiftround = true    -- use multiple of shiftwidth when indenting with "<" and ">"
 
-opt.hlsearch = true   -- highlight all matches on previous search pattern
-opt.ignorecase = true -- ignore case in search patterns
+opt.hlsearch = false   -- highlight all matches on previous search pattern
+opt.ignorecase = false -- ignore case in search patterns
 opt.smartcase = true  -- smart case
-opt.wildignore = opt.wildignore + { "*/.build/*", "*/.tmp/*" }
+opt.wildignore = opt.wildignore + { "*/.build*/*", "*/.tmp/*" }
 opt.wildmenu = true   -- make tab completion for files/buffers act like bash
 
 opt.cursorline = true -- highlight the current line
@@ -43,9 +43,9 @@ opt.listchars = {
     nbsp = "×"
 }
 
-opt.cmdheight = 0      -- more space in the neovim command line for displaying messages
+opt.cmdheight = 1      -- more space in the neovim command line for displaying messages
 
-opt.mouse = "a"        -- allow the mouse to be used in neovim
+opt.mouse = ""        -- allow the mouse to be used in neovim
 opt.number = true      -- set numbered lines
 opt.scrolloff = 18     -- minimal number of screen lines to keep above and below the cursor
 opt.sidescrolloff = 3  -- minimal number of screen columns to keep to the left and right (horizontal) of the cursor if wrap is `false`
@@ -60,7 +60,7 @@ opt.swapfile = false    -- creates a swapfile
 opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 
 -- autocomplete
-opt.completeopt = { "menu", "menuone", "noselect", "popup" } -- mostly just for cmp
+opt.completeopt = { "menu", "menuone", "noselect" } -- mostly just for cmp
 opt.shortmess = opt.shortmess + {
     c = true
 } -- hide all the completion messages, e.g. "-- XXX completion (YYY)", "match 1 of 2", "The only match", "Pattern not found"

@@ -1,8 +1,6 @@
-require("settings/basic_options")
-require("lazy/lazy")
-require("keymaps")
-
-vim.lsp.enable('clangd')
+require('options')
+require('keymaps')
+require('plugins')
 
 vim.cmd([[colorscheme cyberdream]])
 

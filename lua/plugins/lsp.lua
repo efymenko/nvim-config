@@ -1,4 +1,6 @@
-return {
-    'neovim/nvim-lspconfig',
-    { "linrongbin16/lsp-progress.nvim", opts = {}, },
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+require('lspconfig')['clangd'].setup {
+    capabilities = capabilities
 }
+
