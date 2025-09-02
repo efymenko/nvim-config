@@ -1,5 +1,5 @@
 vim.pack.add({
-    'https://github.com/HiPhish/rainbow-delimiters.nvim',
+    -- 'https://github.com/HiPhish/rainbow-delimiters.nvim',
     'https://github.com/MunifTanjim/nui.nvim',
     'https://github.com/NeogitOrg/neogit',
     'https://github.com/antosha417/nvim-lsp-file-operations',
@@ -13,7 +13,7 @@ vim.pack.add({
     'https://github.com/scottmckendry/cyberdream.nvim',
     'https://github.com/sindrets/diffview.nvim',
     'https://github.com/folke/noice.nvim',
-    'https://github.com/nvim-treesitter/nvim-treesitter',
+    { src = 'https://github.com/nvim-treesitter/nvim-treesitter', version = 'main' },
     'https://github.com/kevinhwang91/nvim-bqf',
     'https://github.com/junegunn/fzf',
     'https://github.com/OXY2DEV/helpview.nvim',
@@ -21,6 +21,7 @@ vim.pack.add({
     'https://github.com/cbochs/grapple.nvim',
     'https://github.com/nvim-lualine/lualine.nvim',
 });
+
 
 require('plugins/cyberdream')
 require('plugins/lsp')
@@ -46,6 +47,32 @@ require('noice').setup({
         lsp_doc_border = true,
     }
 })
+
+require('plugins/rainbow')
+-- require('rainbow-delimiters.setup').setup {
+--     strategy = {
+--         [''] = 'rainbow-delimiters.strategy.global',
+--         vim = 'rainbow-delimiters.strategy.local',
+--     },
+--     query = {
+--         [''] = 'rainbow-delimiters',
+--         lua = 'rainbow-blocks',
+--     },
+--     priority = {
+--         [''] = 110,
+--         lua = 210,
+--     },
+--     highlight = {
+--         'RainbowDelimiterRed',
+--         'RainbowDelimiterYellow',
+--         'RainbowDelimiterBlue',
+--         'RainbowDelimiterOrange',
+--         'RainbowDelimiterGreen',
+--         'RainbowDelimiterViolet',
+--         'RainbowDelimiterCyan',
+--     },
+-- }
+
 
 require('plugins/neotree')
 require('lualine').setup()
